@@ -1,14 +1,14 @@
 name: android
 
 on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - 'README.md'
-      - 'LICENSE.md'
-      - 'CONTRIBUTING.md'
-      - 'CODE_OF_CONDUCT.md'
+  # push:
+  #   branches:
+  #     - master
+  #   paths-ignore:
+  #     - 'README.md'
+  #     - 'LICENSE.md'
+  #     - 'CONTRIBUTING.md'
+  #     - 'CODE_OF_CONDUCT.md'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
