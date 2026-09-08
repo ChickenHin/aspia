@@ -15,7 +15,7 @@ jobs:
   build-all-matrix:
     name: ${{ matrix.os }}-${{ matrix.arch }}-${{ matrix.build_type }}
     runs-on: ${{ matrix.os }}
-    if: github.event_name == 'push'
+    # if: github.event_name == 'push'
     strategy:
       fail-fast: true
       matrix:
